@@ -208,6 +208,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const homeQuickForm = document.getElementById('homeQuickForm');
+  if (homeQuickForm) {
+    homeQuickForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('homeQuickName')?.value || '';
+      const phone = document.getElementById('homeQuickPhone')?.value || '';
+      const room = document.getElementById('homeQuickRoom')?.value || '';
+      const message = document.getElementById('homeQuickMessage')?.value || '';
+
+      let waText = `*Quick Inquiry - Home Page (Sarita Girls Hostel)*\n\n`;
+      waText += `*Name:* ${name}\n`;
+      waText += `*Phone:* ${phone}\n`;
+      if (room) waText += `*Interested In:* ${room}\n`;
+      if (message) waText += `*Message:* ${message}`;
+
+      const waUrl = `https://wa.me/919122302588?text=${encodeURIComponent(waText)}`;
+      showToast("Redirecting your quick inquiry to WhatsApp...");
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+        homeQuickForm.reset();
+      }, 800);
+    });
+  }
+
   // 9. Quick Search / Check Availability Bar on Hero Section
   const checkAvailBtn = document.getElementById('checkAvailBtn');
   if (checkAvailBtn) {
