@@ -438,59 +438,6 @@ img {
   transform: scale(1.04);
 }
 
-/* Stunning Trust Strip Below Hero Image */
-.hero-trust-bar {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.trust-badge-item {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.9);
-  padding: 16px 14px;
-  border-radius: var(--radius-md);
-  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  transition: all 0.3s ease;
-}
-
-.trust-badge-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 30px -5px rgba(126, 34, 206, 0.18);
-  border-color: var(--primary-light);
-  background: #ffffff;
-}
-
-.trust-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  flex-shrink: 0;
-}
-
-.trust-text h4 {
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 2px;
-}
-
-.trust-text p {
-  font-size: 0.76rem;
-  color: var(--text-muted);
-  margin: 0;
-  line-height: 1.3;
-}
-
 /* Section Common */
 .section {
   padding: 90px 0;
