@@ -463,8 +463,7 @@ img {
 
 .showcase-banner-wrapper img {
   width: 100%;
-  height: auto;
-  max-height: 480px;
+  height: 560px;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -1666,8 +1665,7 @@ img {
     border-width: 3px;
   }
   .showcase-banner-wrapper img {
-    height: auto;
-    max-height: 320px;
+    height: 340px;
   }
 
   .reviews-banner {
@@ -1838,8 +1836,7 @@ img {
   }
 
   .showcase-banner-wrapper img {
-    height: auto;
-    max-height: 220px;
+    height: 250px;
   }
 
   .floating-badge {
