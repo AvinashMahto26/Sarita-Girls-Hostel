@@ -1543,6 +1543,11 @@ img {
   align-self: flex-start;
 }
 
+.home-quick-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .home-quick-form .form-group {
   margin-bottom: 14px;
 }
@@ -1576,26 +1581,28 @@ img {
 
 .btn-vip-submit {
   display: inline-flex;
-  width: auto;
-  align-self: flex-start;
-  background: linear-gradient(135deg, #7e22ce, #db2777);
-  color: white;
-  padding: 10px 24px;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 0.92rem;
+  min-width: 240px;
+  align-self: center;
+  margin: 10px auto 0 auto;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: #ffffff !important;
+  padding: 12px 38px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.98rem;
   border: none;
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  box-shadow: 0 6px 18px -4px rgba(219, 39, 119, 0.4);
-  transition: all 0.2s ease;
+  gap: 10px;
+  box-shadow: 0 6px 20px -4px rgba(22, 197, 94, 0.45);
+  transition: all 0.25s ease;
 }
 
 .btn-vip-submit:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px -4px rgba(219, 39, 119, 0.6);
+  box-shadow: 0 10px 25px -4px rgba(22, 197, 94, 0.65);
+  color: #ffffff !important;
 }
 
 /* CTA Section */
