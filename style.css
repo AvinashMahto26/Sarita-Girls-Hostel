@@ -1575,16 +1575,17 @@ img {
 }
 
 .btn-vip-submit {
-  width: 100%;
+  display: inline-flex;
+  width: auto;
+  align-self: flex-start;
   background: linear-gradient(135deg, #7e22ce, #db2777);
   color: white;
-  padding: 12px 20px;
-  border-radius: 12px;
+  padding: 10px 24px;
+  border-radius: 10px;
   font-weight: 600;
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   border: none;
   cursor: pointer;
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
